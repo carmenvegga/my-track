@@ -32,9 +32,9 @@ var generateRandomString = function(length) {
 
 var stateKey = 'spotify_auth_state';
 
-var app = express();
+var app = express(); //librería para hacer un servidor local
 
-app.use(express.static(__dirname))
+app.use(express.static(__dirname)) //nombre del directorio
    .use(cookieParser());
 
 app.get('/login', function(req, res) {
